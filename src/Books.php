@@ -1,6 +1,8 @@
 <?php
-namespace LibrarySystems;
-class Book{
+namespace LibrarySystem;
+
+
+class Books{
     private $id;
     private $title;
     private $author;
@@ -14,7 +16,7 @@ class Book{
         $this->year = $year;
         $this->isBorrowed = false;
     }
-    public function getid(){
+    public function getId(){
         return $this->id;
     }
     public function getTitle() {
@@ -32,9 +34,12 @@ class Book{
     public function isBorrowed() {
         return $this->isBorrowed;
     }
-
+   
+    // اختبار للملف انه يشتغل
+    public function display(){
+        echo "Hello from HomeControlle";
     }
 
-
-;
+    }
+    
 ?>
